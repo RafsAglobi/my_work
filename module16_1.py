@@ -5,19 +5,19 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Главная страница"}
+    return {"message": "Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°"}
 
 
 @app.get("/user/admin")
 async def admin():
-    return {"message": "Вы вошли как администратор"}
+    return {"message": "Р’С‹ РІРѕС€Р»Рё РєР°Рє Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ"}
 
 
 @app.get("/user/{user_id}")
 async def user(user_id: int):
-    return {"message": f"Вы вошли как пользователь № {user_id}"}
+    return {"message": f"Р’С‹ РІРѕС€Р»Рё РєР°Рє РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ в„– {user_id}"}
 
 
 @app.get("/user")
 async def user_info(username: str, age: int):
-    return {"message": f"Информация о пользователе. Имя: {username}, Возраст: {age}"}
+    return {"message": f"РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ. РРјСЏ: {username}, Р’РѕР·СЂР°СЃС‚: {age}"}
